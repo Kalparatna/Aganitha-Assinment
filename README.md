@@ -32,7 +32,7 @@ This project was built as part of a take-home challenge to demonstrate:
 
 ## 🛠 Technology Stack
 
-- **Framework**: React 18 with TypeScript
+- **Framework**: React 18 with JavaScript
 - **Styling**: Tailwind CSS for responsive design and animations
 - **Icons**: Lucide React for consistent iconography
 - **API**: Open Library Search API (no authentication required)
@@ -56,7 +56,7 @@ src/
 ├── services/
 │   └── bookApi.ts      # API integration layer
 ├── types/
-│   └── book.ts         # TypeScript type definitions
+│   └── book.ts         # JavaScript type definitions
 └── App.tsx             # Main application component
 ```
 
@@ -149,14 +149,14 @@ This application can be easily deployed to various platforms:
 This project was developed with a focus on:
 1. **User-Centered Design**: Every feature serves Alex's specific needs
 2. **Incremental Development**: Built core features first, enhanced iteratively
-3. **Code Quality**: TypeScript, proper error handling, and clean architecture
+3. **Code Quality**: JavaScript, proper error handling, and clean architecture
 4. **Performance**: Optimized for fast loading and smooth interactions
 
 ## 📝 AI Collaboration Notes
 
 This project demonstrates effective collaboration with AI tools for:
 - Architecture planning and component design
-- TypeScript type definitions and API integration
+- JavaScript type definitions and API integration
 - Responsive design implementation
 - Error handling and edge case management
 - Code optimization and best practices
