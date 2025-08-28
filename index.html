@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookFinder - Discover Your Next Great Read</title>
+    <meta name="description" content="Search and discover books by title, author, ISBN, or subject. Find detailed information, ratings, and covers for millions of books." />
+    <style>
+      .line-clamp-1 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .animate-in {
+        animation-fill-mode: both;
+      }
+      .fade-in {
+        animation: fade-in 0.2s ease-out;
+      }
+      .zoom-in-95 {
+        animation: zoom-in-95 0.2s ease-out;
+      }
+      .slide-in-from-top-2 {
+        animation: slide-in-from-top-2 0.2s ease-out;
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes zoom-in-95 {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes slide-in-from-top-2 {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
