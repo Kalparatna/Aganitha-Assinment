@@ -39,17 +39,6 @@ export const useBookSearch = () => {
       });
       
       dispatch({ type: ActionTypes.SET_SEARCH_PARAMS, payload: params });
-      
-      // Add to search history
-      dispatch({ 
-        type: ActionTypes.ADD_TO_HISTORY, 
-        payload: {
-          query: params.query,
-          searchType: params.searchType,
-          timestamp: new Date().toISOString(),
-          resultCount: result.numFound
-        }
-      });
     } catch (err) {
       dispatch({ 
         type: ActionTypes.SET_ERROR, 

@@ -2,8 +2,12 @@ const BASE_URL = 'https://openlibrary.org';
 
 /**
  * Search for books using the Open Library API
- * @param {import('../types/book.js').SearchParams} params - Search parameters
- * @returns {Promise<import('../types/book.js').BookSearchResponse>}
+ * @param {Object} params - Search parameters
+ * @param {string} params.query - Search query
+ * @param {'title'|'author'|'isbn'|'subject'} params.searchType - Type of search
+ * @param {number} params.limit - Number of results to return
+ * @param {number} params.offset - Offset for pagination
+ * @returns {Promise<Object>} Search response with docs array and numFound
  */
 export const searchBooks = async (params) => {
   const { query, searchType, limit, offset } = params;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BookOpen } from 'lucide-react';
 import { useBookSearch } from './hooks/useBookSearch';
-import { useBookContext } from './context/BookContext';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import BookGrid from './components/BookGrid';

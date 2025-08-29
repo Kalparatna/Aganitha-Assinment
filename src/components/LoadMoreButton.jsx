@@ -20,7 +20,7 @@ const LoadMoreButton = ({ onLoadMore, loading, hasMore }) => {
           </>
         ) : (
           <>
-            <span>Load More Books</span>
+            <span>More Books</span>
             <ChevronDown className="w-4 h-4" />
           </>
         )}
